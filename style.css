@@ -1,5 +1,5 @@
 body {
-    background-color: #E9EFC0;
+    background-color: #bacf2c;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ header {
 li {
     list-style-type: none;
     margin-bottom: 10px;
-    background-color: #614124;
+    background-color: #97b6dc;
     padding: 5px;
     border-radius: 10px;
     color: white;
@@ -27,7 +27,7 @@ li {
 li span {
     font-style: italic;
     font-weight: bolder;
-    color: blue;
+    color: rgb(46, 46, 85);
 }
 
 #container {
@@ -42,7 +42,7 @@ li span {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #CC704B;
+    background-color: rgb(69 114 186);;
 }
 
 input {
@@ -51,18 +51,16 @@ input {
 }
 
 button {
-    width: 25%;
+    width: 28%;
     height: 38px;
-
     border-radius: 7px;
     background-color: #eefeff;
     margin-top: 2px; margin-bottom: 2px;
-
 }
 
 .sent {
     text-align: right;
-    background-color: #4E944F;
+    background-color: #ff6a76;
     margin-left: 50%;
 }
 
@@ -86,10 +84,8 @@ button {
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 	  background-color: rgb(197, 197, 197); 
         /* body color */
-
 	  height: 100%;
 	  margin: 0;
   }
@@ -181,3 +177,10 @@ button {
 		  margin: 10vw;
 	  }
   }	
+
+#msgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 13%;
+}
