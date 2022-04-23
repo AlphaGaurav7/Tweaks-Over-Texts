@@ -18,27 +18,7 @@
 
 // const darkmode = new Darkmode(options);
 // darkmode.showWidget();
-// function ShowAndHide() {
-//   var x = document.getElementById("showing");
-//   if (x.style.display == "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-// const btn = document.getElementById("btn2");
-// const post = document.querySelector(".post");
-// const widget = document.querySelector(".star-widget");
-// const editBtn = document.querySelector(".edit");
-// btn.onclick = () => {
-//   widget.style.display = "none";
-//   post.style.display = "block";
-//   editBtn.onclick = () => {
-//     widget.style.display = "block";
-//     post.style.display = "none";
-//   };
-//   return false;
-// };
+
 
 let Employee_Rating = 0;
 
@@ -87,6 +67,28 @@ document.getElementById("form-post").addEventListener("submit", function (e) {
   console.log(msg);
   console.log(Employee_Rating);
 
+  const btn = document.getElementById("btn2");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      
+      btn.onclick = () => {
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () => {
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+      }
+      function ShowAndHide() {
+      var x = document.getElementById("showing");
+      if (x.style.display == "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+      }
 
   firebase
     .database()

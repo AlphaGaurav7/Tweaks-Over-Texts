@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Firebase RealTime Chat</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
 
-    <div id="containner" class="container">
-      <img src="https://cdn.pixabay.com/photo/2022/03/01/08/11/call-center-7040784_960_720.png" height="400vh" alt="Chatbot clipart">
-  
-      <div id="container">
-        <ul id="msgs"></ul>
-        <form id="msg-form">
-          <input id="msg-input" type="text" />
-          <button id="msg-btn" type="submit">Send</button>
-        </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Firebase RealTime Chat</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <div id="containner" class="container">
+    <img src="https://cdn.pixabay.com/photo/2022/03/01/08/11/call-center-7040784_960_720.png" height="400vh"
+      alt="Chatbot clipart">
+
+    <div id="container">
+
+      <div class="logo">
+        
+        <ul id="msgs">
+          <!-- <img
+          src="https://images.unsplash.com/photo-1637760147698-3e7015aed2a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=593&q=80"
+          width="20%"> -->
+        </ul>
       </div>
-  
-      
-      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
-      <script src="encrypt.js"></script>
-      <script src="yes.js"></script>
-      </div>
+      <form id="msg-form">
+        <input id="msg-input" type="text" />
+        <button id="msg-btn" type="submit">Send
+          <i class="material-icons" style="font-size: 12px;">send</i>
+        </button>
+      </form>
     </div>
 
-    
-  </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="encrypt.js"></script>
+    <script src="yes.js"></script>
+  </div>
+  </div>
+
+
+</body>
+
 </html>

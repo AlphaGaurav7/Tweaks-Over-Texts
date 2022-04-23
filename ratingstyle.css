@@ -11,7 +11,7 @@ html, body{
   place-items: center;
   text-align: center;
   /* 1st change */
-    background: rgb(255, 255, 255); 
+    background: rgb(63, 63, 63); 
 }
 .container{
   position: relative;
@@ -32,7 +32,7 @@ html, body{
 }
 .container .text{
   font-size: 25px;
-  color: #666;
+  color: rgb(43, 42, 42);
   font-weight: 500;
 }
 .container .edit{
@@ -40,7 +40,7 @@ html, body{
   right: 10px;
   top: 5px;
   font-size: 16px;
-  color: #666;
+  color: rgb(24, 23, 23);
   font-weight: 500;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ form .btn button{
   /* border: 1px solid #444;
   outline: none;
   background: #222; */
-  color: #999;
+  color: rgb(85, 85, 85);
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
@@ -139,5 +139,6 @@ form .btn button{
   transition: all 0.3s ease;
 }
 form .btn button:hover{
-  background: #1b1b1b;
+  background: #3a3a3a;
+  color: rgb(202, 202, 202);
 }
