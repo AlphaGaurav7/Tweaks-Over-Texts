@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./contact_us.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">IIIT Lucknow</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../About_Us/About_Us.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Academics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Faculty</a>
+                <a class="dropdown-item" href="../Blog/blog.html">Blog</a>
+                <a class="dropdown-item" href="#">Recruitment</a>
+                <hr class="dropdown-divider" />
+                <a class="dropdown-item" href="#">Social Media links</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contact Us/contact_us.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            style="margin: 6px"
+            onclick="window.location.href='https://shielded-castle-02465.herokuapp.com/' "
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <h1 style="text-align: center" class="main-heading">Contact Us</h1>
+      <h3 style="text-align: center" class="sub-heading">
+        Follow the links below to contact us!
+      </h3>
+      <div class="row">
+        <div class="card col-12 col-sm-5 col-md-3">
+          <h2 class="admissions">Admin Office</h2>
+          <div class="card-container">
+            <h4><b>John Doe</b></h4>
+            <p>
+              Donec nec quam id tortor hendrerit interdum. Etiam vitae tortor ut
+              nunc dignissim facilisis. Donec eget nunc dui.
+            </p>
+          </div>
+        </div>
+        <div class="card col-12 col-sm-5 col-md-4">
+          <h2 class="admissions">Admissions Office</h2>
+          <div class="card-container">
+            <h4><b>John Doe</b></h4>
+            <p>
+              Donec nec quam id tortor hendrerit interdum. Etiam vitae tortor ut
+              nunc dignissim facilisis. Donec eget nunc dui.
+            </p>
+          </div>
+        </div>
+        <div class="card col-12 col-sm-10 col-md-3">
+          <h2 class="admissions">Dean Office</h2>
+          <div class="card-container">
+            <h4><b>John Doe</b></h4>
+            <p>
+              Donec nec quam id tortor hendrerit interdum. Etiam vitae tortor ut
+              nunc dignissim facilisis. Donec eget nunc dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href = "#" class="CustomerCare" id = "openPopup">
+      <button id = "CustomerCareButton" >Contact Student Care</button>
+    </a>
+    <div id="overlay"></div>
+    <div id="popup">
+      <button id="popupclose" class = "popupclosebutton">X</button>
+      <div class="popupcontent">
+          <h1 class = "popupNumber">You can contact student care on <br>+91-XX-XX-XX-XX</h1>
+          <a href = "#" class = "chatsitelink"><button class = "chatwithcare">Chat with Student Care agent</button></a>
+      </div>
+  </div>
+    <footer class="main-footer">
+      <!-- This will have the footer with more links and contact info -->
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-sm-12 col-md-6 footer-sections">
+            <h6 class="footer-about-heading">About Us</h6>
+            <p class="footer-about-us-content">
+              Donec nec quam id tortor hendrerit interdum. Etiam vitae tortor ut
+              nunc dignissim facilisis. Donec eget nunc dui. Pellentesque sed
+              lectus lobortis libero pretium fermentum eget eu orci. Maecenas
+              augue nulla, finibus eu bibendum et, rutrum sed tellus. Maecenas
+              vitae est a ex elementum dignissim eu ac elit. Maecenas elementum.
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-sections">
+            <h6>Clubs</h6>
+            <ul class="list">
+              <li class="club-link-footer">
+                <a href="#" id="hyp">Crotonia</a>
+              </li>
+              <li class="club-link-footer">
+                <a href="#" id="hyp">Equinox</a>
+              </li>
+              <li class="club-link-footer">
+                <a href="#" id="hyp">AfterDark</a>
+              </li>
+              <li class="club-link-footer">
+                <a href="#" id="hyp">Estrella</a>
+              </li>
+              <li class="club-link-footer">
+                <a href="#" id="hyp">Zephyr</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-sections">
+            <h6>Quick Links</h6>
+            <ul>
+              <li class="quick-link-footer">
+                <a href="../About_Us/About_Us.html" id="hyp">About Us</a>
+              </li>
+              <li class="quick-link-footer">
+                <a href="#" id="hyp">Contact Us</a>
+              </li>
+              <li class="quick-link-footer">
+                <a href="../Blog/blog.html" id="hyp">Blog</a>
+              </li>
+              <li class="quick-link-footer">
+                <a href="../gallery.html" id="hyp">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr width="80%" style="margin: 1% auto" class="line" />
+      <div class="footer-ending">
+        <div class="footer-copyright">
+          <p>This website is a copyright &copy; of IIITL 2022</p>
+        </div>
+        <div class="footer-social-media" id="social-footer">
+          <a href="#social-footer"><i class="fa-brands fa-facebook social-icon"></i></a>
+          <a href="#social-footer"><i class="fa-brands fa-instagram social-icon"></i></a>
+          <a href="#social-footer"><i class="fa-brands fa-twitter social-icon"></i></a>
+          <a href="#social-footer"><i class="fa-brands fa-youtube social-icon"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- JS links-->
+    <div class="scripts">
+      <script>
+        popupclose.onclick = function() {
+          overlay.style.display = 'none';
+          popup.style.display = 'none';
+        };
+	// Show Overlay and Popup;
+        openPopup.onclick = function() {
+          overlay.style.display = 'block';
+          popup.style.display = 'block';
+        }
+      </script>
+      <script src="./index.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://kit.fontawesome.com/b08f567665.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+      <script>
+        function addDarkmodeWidget() {
+          const options = {
+            bottom: '64px', // default: '32px'
+            right: '32px', // default: '32px'
+            left: 'unset', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#fff',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+          }
+          const darkmode = new Darkmode(options);
+          darkmode.showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+      </script>
+    </script>
+    </div>
+  </body>
+</html>
