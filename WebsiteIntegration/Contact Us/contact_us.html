@@ -126,17 +126,21 @@
         </div>
       </div>
     </div>
-    <a href = "#" class="CustomerCare" id = "openPopup">
-      <button id = "CustomerCareButton" >Contact Student Care</button>
+    <a href="#" class="CustomerCare" id="openPopup">
+      <button id="CustomerCareButton">Contact Student Care</button>
     </a>
     <div id="overlay"></div>
     <div id="popup">
-      <button id="popupclose" class = "popupclosebutton">X</button>
+      <button id="popupclose" class="popupclosebutton">X</button>
       <div class="popupcontent">
-          <h1 class = "popupNumber">You can contact student care on <br>+91-XX-XX-XX-XX</h1>
-          <a href = "#" class = "chatsitelink"><button class = "chatwithcare">Chat with Student Care agent</button></a>
+        <h1 class="popupNumber">
+          You can contact student care on <br />+91-XX-XX-XX-XX
+        </h1>
+        <a href="#" class="chatsitelink"
+          ><button class="chatwithcare">Chat with Student Care agent</button></a
+        >
       </div>
-  </div>
+    </div>
     <footer class="main-footer">
       <!-- This will have the footer with more links and contact info -->
       <div class="container">
@@ -196,25 +200,33 @@
           <p>This website is a copyright &copy; of IIITL 2022</p>
         </div>
         <div class="footer-social-media" id="social-footer">
-          <a href="#social-footer"><i class="fa-brands fa-facebook social-icon"></i></a>
-          <a href="#social-footer"><i class="fa-brands fa-instagram social-icon"></i></a>
-          <a href="#social-footer"><i class="fa-brands fa-twitter social-icon"></i></a>
-          <a href="#social-footer"><i class="fa-brands fa-youtube social-icon"></i></a>
+          <a href="#social-footer"
+            ><i class="fa-brands fa-facebook social-icon"></i
+          ></a>
+          <a href="#social-footer"
+            ><i class="fa-brands fa-instagram social-icon"></i
+          ></a>
+          <a href="#social-footer"
+            ><i class="fa-brands fa-twitter social-icon"></i
+          ></a>
+          <a href="#social-footer"
+            ><i class="fa-brands fa-youtube social-icon"></i
+          ></a>
         </div>
       </div>
     </footer>
     <!-- JS links-->
     <div class="scripts">
       <script>
-        popupclose.onclick = function() {
-          overlay.style.display = 'none';
-          popup.style.display = 'none';
+        popupclose.onclick = function () {
+          overlay.style.display = "none";
+          popup.style.display = "none";
         };
-	// Show Overlay and Popup;
-        openPopup.onclick = function() {
-          overlay.style.display = 'block';
-          popup.style.display = 'block';
-        }
+        // Show Overlay and Popup;
+        openPopup.onclick = function () {
+          overlay.style.display = "block";
+          popup.style.display = "block";
+        };
       </script>
       <script src="./index.js"></script>
       <script
@@ -240,24 +252,23 @@
       <script>
         function addDarkmodeWidget() {
           const options = {
-            bottom: '64px', // default: '32px'
-            right: '32px', // default: '32px'
-            left: 'unset', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#fff',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
+            bottom: "64px", // default: '32px'
+            right: "32px", // default: '32px'
+            left: "unset", // default: 'unset'
+            time: "0.5s", // default: '0.3s'
+            mixColor: "#fff", // default: '#fff'
+            backgroundColor: "#fff", // default: '#fff'
+            buttonColorDark: "#fff", // default: '#100f2c'
+            buttonColorLight: "#fff", // default: '#fff'
             saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-          }
+            label: "🌓", // default: ''
+            autoMatchOsTheme: true, // default: true
+          };
           const darkmode = new Darkmode(options);
           darkmode.showWidget();
         }
-        window.addEventListener('load', addDarkmodeWidget);
+        window.addEventListener("load", addDarkmodeWidget);
       </script>
-    </script>
     </div>
   </body>
 </html>

@@ -178,9 +178,52 @@ button {
 	  }
   }	
 
-#msgs {
+  #overlay {
+    display : block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+  }
+  
+  #popup {
+    display : block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px; /*Half the value of width to center div*/
+    margin-top: -250px; /*Half the value of height to center div*/
+    z-index: 200;
+    border-radius: 7%;
+  }
+  
+  .popupcontent{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 13%;
+    justify-content: center;
+    align-items: center;  
+    padding: 1%;
+  }
+  
+#complaint{
+    border: 1px solid black;
 }
+
+  .popupNumber{
+    padding: 10%;
+  }
+  
+  #popupclose{
+    border-style: none;
+    background-color: white;
+    font-size : 30px;
+  }

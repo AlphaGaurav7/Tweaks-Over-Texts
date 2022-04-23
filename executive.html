@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href = "executive.css">
-</head>
-<body style = "background-color: teal;">
-    <div class = "main-content">
-        <div class="left-list">
-            <h1 style = "padding-top: 5%; font-family: 'Courier New', Courier, monospace;">Open Tickets</h1>
-        </div>
-        <div class="right-chat"></div>
+    <link rel="stylesheet" href="executive.css" />
+  </head>
+  <body style="background-color: teal">
+    <div class="main-content">
+      <div class="left-list">
+        <h1
+          style="
+            padding-top: 5%;
+            font-family: 'Courier New', Courier, monospace;
+          "
+        >
+          Open Tickets
+        </h1>
+        <ul class="waiting"></ul>
+      </div>
+      <div class="right-chat"></div>
     </div>
-</body>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="encrypt.js"></script>
+    <script src="executive.js"></script>
+  </body>
 </html>
