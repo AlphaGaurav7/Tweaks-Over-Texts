@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>feedback form</title>
+    <link rel="stylesheet" href="ratingstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5" />
+        <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4" />
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3" />
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2" />
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1" />
+        <label for="rate-1" class="fas fa-star"></label>
+        <form id="form-post" action="#">
+          <header></header>
+          <!-- imppp!!-->
+          <div class="textarea">
+            <textarea id = "feed"
+              cols="30"
+              placeholder="Describe your experience.."
+            ></textarea>
+          </div>
+          <!-- <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div> -->
+          <div class="btn">
+            <button onclick="ShowAndHide()">
+              categorize your issue
+            </button>
+          </div>
+          <div class="textarea"  id="showing" style="display: none">
+            <div><!-- well planned divs --></div>
+          </div>
+
+          <div class="btn" id="btn2" type="submit">
+            <button id="bbbtt" type="submit" onClick= >Post</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    
+    <script src="encrypt.js"></script>
+    <script type="module" src="ratings.js"></script>
+  </body>
+</html>
