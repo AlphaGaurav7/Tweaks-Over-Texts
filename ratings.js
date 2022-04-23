@@ -42,21 +42,21 @@
 
 let Employee_Rating = 0;
 
-document.getElementById("btn2").addEventListener("click", function(){
-if (document.getElementById("rate-5").checked) {
-  Employee_Rating = 5;
-} else if (document.getElementById("rate-4").checked) {
-  Employee_Rating = 4;
-} else if (document.getElementById("rate-3").checked) {
-  Employee_Rating = 3;
-} else if (document.getElementById("rate-2").checked) {
-  Employee_Rating = 2;
-} else if (document.getElementById("rate-1").checked) {
-  Employee_Rating = 1;
-}
+document.getElementById("btn2").addEventListener("click", function () {
+  if (document.getElementById("rate-5").checked) {
+    Employee_Rating = 5;
+  } else if (document.getElementById("rate-4").checked) {
+    Employee_Rating = 4;
+  } else if (document.getElementById("rate-3").checked) {
+    Employee_Rating = 3;
+  } else if (document.getElementById("rate-2").checked) {
+    Employee_Rating = 2;
+  } else if (document.getElementById("rate-1").checked) {
+    Employee_Rating = 1;
+  }
 });
-console.log("Empl Rating" , Employee_Rating)
-    
+console.log("Empl Rating", Employee_Rating);
+
 // import {
 //   getDataBase,
 //   ref,
@@ -86,7 +86,6 @@ document.getElementById("form-post").addEventListener("submit", function (e) {
   msgInput.value = "";
   console.log(msg);
   console.log(Employee_Rating);
-
 
   firebase
     .database()
