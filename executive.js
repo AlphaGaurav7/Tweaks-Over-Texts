@@ -30,3 +30,9 @@ fetch.on("child_added", function (snap) {
   const block = `<li class=${student.uid}><h1>${student.block}</h1><br>${student.complaint}</li>`;
   document.getElementById("waiting").innerHTML += block;
 });
+
+ref.on('child_added', (snapshot, prevChildKey) => {
+  const newPost = snapshot.val();
+  console.log(newPost.author);
+  console.log(newPost.title);
+});
