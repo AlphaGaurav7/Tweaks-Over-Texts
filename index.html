@@ -45,7 +45,20 @@
       <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
       <script src="encrypt.js"></script>
+      <script>
+        document.getElementById("submitform").onclick = function (e) {
+          e.preventDefault();
+          overlay.style.display = "none";
+          popup.style.display = "none";
+        };
+        document.getElementById("submitform").onclick = function (e) {
+          e.preventDefault();
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById("popup").style.display = "none";
+        };
+      </script>
       <script src="yes.js"></script>
+      
     </div>
   </body>
 </html>

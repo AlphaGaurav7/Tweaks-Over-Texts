@@ -218,12 +218,14 @@
     <!-- JS links-->
     <div class="scripts">
       <script>
-        popupclose.onclick = function () {
+        popupclose.onclick = function (e) {
+          e.preventDefault();
           overlay.style.display = "none";
           popup.style.display = "none";
         };
         // Show Overlay and Popup;
-        openPopup.onclick = function () {
+        openPopup.onclick = function (e) {
+          e.preventDefault();
           overlay.style.display = "block";
           popup.style.display = "block";
         };
