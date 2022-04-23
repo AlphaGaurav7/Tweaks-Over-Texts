@@ -53,6 +53,11 @@ input {
 button {
     width: 25%;
     height: 38px;
+
+    border-radius: 7px;
+    background-color: #eefeff;
+    margin-top: 2px; margin-bottom: 2px;
+
 }
 
 .sent {
@@ -81,7 +86,10 @@ button {
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	  background-color: silver;
+
+	  background-color: rgb(197, 197, 197); 
+        /* body color */
+
 	  height: 100%;
 	  margin: 0;
   }
