@@ -24,14 +24,14 @@ document.getElementById("msg-form").addEventListener("submit", function (e) {
 
   firebase
     .database()
-    .ref("Users/" + uuid + "/" + timestamp)
+    .ref("Users/" + uuid)
     .set({
       Name,
       msg,
       uuid,
     });
 });
-const fetch = firebase.database().ref(uuid + "/");
+const fetch = firebase.database().ref("Users/" + uuid + "/");
 fetch.on("child_added", function (snap) {
   const msgs = snap.val();
   const msg = `<li class=${Name === msgs.Name ? "sent" : "receive"}>${

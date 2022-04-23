@@ -28,4 +28,5 @@ const fetch = firebase.database().ref("Users/");
 fetch.on("child_added", function (snap) {
   const student = snap.val();
   console.log(student.uuid);
+  console.log(student.Name);
 });
