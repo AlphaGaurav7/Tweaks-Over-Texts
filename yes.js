@@ -1,4 +1,4 @@
-const Name = prompt("Enter your name: \n");
+const Name = prompt("Enter your Name: \n");
 
 document.getElementById("msg-form").addEventListener("submit", function (e) {
     e.preventDefault();
