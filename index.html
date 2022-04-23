@@ -11,24 +11,43 @@
     />
   </head>
   <body>
-    <a href="#" class="CustomerCare" id="openPopup">
-      <button id="CustomerCareButton">Contact Student Care</button>
-    </a>
     <div id="overlay"></div>
     <div id="popup">
-      <button id="popupclose" class="popupclosebutton">X</button>
+      <!-- <button id="popupclose" class="popupclosebutton">X</button> -->
       <div class="popupcontent">
         <form>
           <h2>Which sector whould you like to contact?</h2>
-          <div class="btn">
+
+          <div class="container1">
+            <div class="selector">
+                <div class="selector-item">
+                    <input type="radio" id="radio1" name="selector" class="selector-item_radio" checked>
+                    <label for="radio1" class="selector-item_label">Admin</label>
+                </div>
+                <div class="selector-item">
+                    <input type="radio" id="radio2" name="selector" class="selector-item_radio">
+                    <label for="radio2" class="selector-item_label">Hostel</label>
+                </div>
+                <div class="selector-item">
+                    <input type="radio" id="radio3" name="selector" class="selector-item_radio">
+                    <label for="radio3" class="selector-item_label">Mess</label>
+                </div>
+            </div>
+        </div>
+
+
+          <!-- <div class="btn">
+          
           <button>Admin</button>
           <button>Hostel</button>
           <button>Mess</button>
-          </div>
+
+          </div> -->
           <h3>Please fill a short desc. of your issue:</h3>
           <input id="complaint" type="text" /><br>
           <div class="btn">
             <button id = "submitform">Submit</button>
+
           </div>
         </form>
       </div>
@@ -51,6 +70,7 @@
       <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
       <script src="encrypt.js"></script>
+      
       <script>
         document.getElementById("submitform").onclick = function (e) {
           e.preventDefault();
