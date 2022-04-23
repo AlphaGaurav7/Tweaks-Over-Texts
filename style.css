@@ -55,7 +55,7 @@ button {
     height: 38px;
     border-radius: 7px;
     background-color: #eefeff;
-    margin-top: 1px; margin-bottom: 2px;
+    margin-top: 2px; margin-bottom: 2px;
 }
 
 .sent {
@@ -84,7 +84,7 @@ button {
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	  background-color: rgb(104, 97, 97); 
+	  background-color: rgb(197, 197, 197); 
         /* body color */
 	  height: 100%;
 	  margin: 0;
