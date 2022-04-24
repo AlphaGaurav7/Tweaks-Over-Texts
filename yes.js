@@ -1,3 +1,5 @@
+// import { adres } from "./executive";
+
 const Name = prompt("Enter your Name: \n");
 
 var dt = new Date().getTime();
@@ -31,6 +33,7 @@ document.getElementById("msg-form").addEventListener("submit", function (e) {
     });
     
 });
+// if(adres()!=null) uuid = adres;
 const fetch = firebase.database().ref("Users/"+uuid);
 fetch.on("child_added", function (snap) {
   const msgs = snap.val();
@@ -40,6 +43,8 @@ fetch.on("child_added", function (snap) {
   }: ${msgs.msg}</li>`;
   document.getElementById("msgs").innerHTML += msg;
 });
+
+
 
 firebase
     .database()
