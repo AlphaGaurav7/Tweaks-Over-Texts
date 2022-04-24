@@ -24,9 +24,9 @@
 //   document.getElementById("student").innerHTML += block;
 // });
 
-setTimeout(function() {
-  //your code to be executed after 1 second
-}, delayInMilliseconds);
+// setTimeout(function() {
+//   //your code to be executed after 1 second
+// }, delayInMilliseconds);
 
 var count = 0;
 const adresses = [];
