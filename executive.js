@@ -23,15 +23,11 @@
 //   }>${student.Name}: ${student.block}</li>`;
 //   document.getElementById("student").innerHTML += block;
 // });
-
+var count = 1;
 const fetch = firebase.database().ref("Users/");
 fetch.on("child_added", function (snap) {
   const student = snap.val();
-<<<<<<< HEAD
-  const block = `<li class=${student.uid}><h1>${student.block}</h1><br>${student.complaint}</li>`;
-  document.getElementById("waiting").innerHTML += block;
-=======
-  console.log(student.uuid);
-  console.log(student.Name);
->>>>>>> bbc3751302ac4a613859434a6e339cfbf6ec691d
+  const block = `<button class="uuid-list" id=${student.uuid}><h1>${count}.</h1></button><br>`;
+  count++;
+  document.getElementById("leftl").innerHTML += block;
 });
